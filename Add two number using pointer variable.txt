@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main ()
+{
+    int a, b, c; //variable
+    int* n, y, z; //pointer variable
+    
+    n = &a;
+    y = &b;
+    z = &c;
+    
+    a = 20;
+    b = 25;
+    
+    *z = *n + *y;
+    
+    print("value of a = %d", *n);
+    print("\n value of b = %d", *y);
+    print("\n value of c = %d", *z);
+    
+    getch ();
+}
